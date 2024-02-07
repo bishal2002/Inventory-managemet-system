@@ -20,7 +20,7 @@ const morgan             = require('morgan');
 require('dotenv').config();
 const PORT               = process.env.PORT || 5000;
 
-Dbconnection();
+//Dbconnection();
 
 app.use(cors());
 
