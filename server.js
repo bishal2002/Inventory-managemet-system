@@ -43,6 +43,10 @@ app.get('/api/get',(req,res)=>{
     res.send({ Message: "The server is looking Healthy!"})
 })
 
+app.get('/api/user',(req,res)=>{
+    res.send({ Message: "The user Data is comming!"})
+})
+
 
 app.listen(PORT,()=>{
     console.log(`Server is Listening on ${PORT}`);
