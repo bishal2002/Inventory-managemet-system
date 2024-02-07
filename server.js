@@ -39,6 +39,10 @@ app.use('/api/v6',storeRoute);
 app.use('/api/v7',inventoryRoute);
 app.use('/api/v8',roleRoute);
 
+app.get('/api/get',(req,res)=>{
+    res.send({ Message: "The server is looking Healthy!"})
+})
+
 
 app.listen(PORT,()=>{
     console.log(`Server is Listening on ${PORT}`);
